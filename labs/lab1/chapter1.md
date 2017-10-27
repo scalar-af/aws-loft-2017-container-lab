@@ -1,5 +1,7 @@
 # LAB 1: docker Refresh
 
+**NOTE: For the sake of time, the only portion of this lab that is required to move forward with the rest of the lab is the "Deploy a Container Registry" section at the bottom of the page**
+
 In this lab we will explore the docker environment. If you are familiar with docker this may function as a brief refresher. If you are new to docker this will serve as an introduction to docker basics. Don't worry, we will progress rapidly. To get through this lab, we are going to focus on the environment itself as well as walk through some exercises with a couple of docker images/containers to tell a complete story and point out some things that you might have to consider when containerizing your application.
 
 This lab should be performed on **YOUR ASSIGNED AWS VM** as `ec2-user` unless otherwise instructed.
