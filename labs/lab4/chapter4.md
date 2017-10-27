@@ -1,5 +1,7 @@
 # LAB 4: Orchestrated deployment of a decomposed application
 
+**Note: This lab is optional and does NOT need to be completed in order to move on to the next lab**
+
 In this lab we introduce how to orchestrate a multi-container application in OpenShift.
 
 This lab should be performed on **YOUR ASSIGNED AWS VM** as `ec2-user` unless otherwise instructed.
