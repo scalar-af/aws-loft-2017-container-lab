@@ -78,4 +78,6 @@ $ git clone https://github.com/tchughesiv/aws-loft-2017-container-lab
 
 What is OpenShift? OpenShift, which you may remember as a "PaaS" to build applications on, has evolved into a complete container platform based on Kubernetes. If you remember the "DIY Cartridges" from older versions of Openshift, essentially, OpenShift v3 has expanded the functionality to provide complete containers. With OpenShift, you can build from a platform, build from scratch, whatever you can do in a container, and still get the complete lifecycle automation you loved in the older versions.
 
+**Please note:** Labs 1 and 3 will contain objectives that need to be completed in order to perform Lab 5. Labs 2 and 4 are notated as "Optional" because they do NOT need to be completed in order to perform Lab 5. If time permits, feel free to run through Labs 2 and 4.
+
 You are now ready to move on to the [next lab](../lab1/chapter1.md).
