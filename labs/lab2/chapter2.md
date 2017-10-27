@@ -1,5 +1,7 @@
 # LAB 2: Analyzing a Monolithic Application
 
+**Note: This lab is optional and does NOT need to be completed in order to move on to the next lab**
+
 Typically, it is best to break down services into the simplest components and then containerize each of them independently. However, when initially migrating an application it is not always easy to break it up into little pieces but you can start with big containers and work towards breaking them into smaller pieces.
 
 In this lab we will create an all-in-one container image comprised of multiple services. We will also observe several bad practices when composing Dockerfiles and explore how to avoid those mistakes. In lab 3 we will decompose the application into more manageable pieces.
