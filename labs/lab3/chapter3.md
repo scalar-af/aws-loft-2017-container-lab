@@ -10,6 +10,8 @@ Expected completion: 20-30 minutes
 
 ## Decompose the application
 
+**Note: if you skipped lab 2, move on to the "Create the Dockerfiles" section**
+
 In the previous lab we created an "all-in-one" application. Let's enter the container and explore.
 
 ```bash
