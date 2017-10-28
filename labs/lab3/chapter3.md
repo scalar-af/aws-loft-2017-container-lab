@@ -1,6 +1,6 @@
 # LAB 3: Deconstructing an application into microservices
 
-In this lab you will deconstruct an application into microservices, creating a multi-container application. In this process we explore the challenges of networking, storage and configuration.
+In this lab you will deconstruct an application into microservices, creating a multi-container application. In this process we explore the challenges of networking, storage and configuration. We will use the containers we build in this lab for our OpenShift deployments in the upcoming labs.
 
 This lab should be performed on **YOUR ASSIGNED AWS VM** as `ec2-user` unless otherwise instructed.
 
