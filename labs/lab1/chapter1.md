@@ -173,6 +173,11 @@ $ docker rm -f apache
 
 To prepare for a later lab, let's deploy a simple registry to store our images.
 
+Navigate to the Lab1 directory
+```bash
+$ cd ~/aws-loft-2017-container-lab/labs/lab1
+```
+
 Inspect the Dockerfile that has been prepared.
 ```bash
 $ cat registry/Dockerfile
