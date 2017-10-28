@@ -1,6 +1,6 @@
 # LAB 4: Orchestrated deployment of a decomposed application
 
-**Note: This lab is optional and does NOT need to be completed in order to move on to the next lab**
+**Note: This lab is optional and does NOT need to be completed in order to move on to the next lab. [Click here](../lab5/chapter5.md) to move on to the next lab.**
 
 In this lab we introduce how to orchestrate a multi-container application in OpenShift.
 
