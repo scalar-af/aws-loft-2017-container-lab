@@ -151,6 +151,8 @@ Now log into the console with the URL given as "oc cluster up" output.  Once you
 
 ## Launch the VMs for the students
 
+**NOTE: Need to update git links/directives**
+
 Clone the repository, this is done from your local workstation
 
 ```
