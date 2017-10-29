@@ -195,17 +195,55 @@ Now log into the console with the URL given as "oc cluster up" output.  Once you
 
 ## Launch the VMs for the students
 
-**NOTE: Need to update git links/directives**
+The following section details how to pull down and edit the Ansible playbooks to launch the lab for an event at scale.
 
 Clone the repository, this is done from your local workstation
 
 ```
 git clone -b AWS-OCP-LAB https://github.com/mann1mal/managing-ocp-install-beyond
 cd managing-ocp-install-beyond/
+```
+Make a copy of the "my_secrets" playbook. We will cusotmize this playbook to allow us to launch to lab for the students at scale.
+
+```
 cp my_secrets.yml <my-username>.yml
 ```
 
-** Fill out the variables in the file
+** Fill out the variables in the newly copied "my_secrets" file. The following variables in the file need to be defined in order to launch the lab:
+
+**Note regarding variables:** See below for explanation of "non-obvious" variables:
+
+* The "*student_count*" variable is the number of instances you wish to deploy. 
+* The "*lab_user*" variable is simply the name appended at the front of the public DNS name. For instance, if I use "*student*" for "*lab_user*," the public DNS name will look like "*student-<x>.your.domain.com*." 
+* The "*aws_az_1*" variable is the Availability Zone we intend to deploy in the exercise
+* The "*tower_ami_id*" variable is the AMI ID for the RHEL image we created ealier in the exercise.
+* The "*domain_name*" variable is the domain we intend to use to assign FQDNs to the instances.
+
+```
+ec2_access_key:
+ec2_secret_key:
+
+aws_key_name:
+lab_user:
+student_count:
+
+aws_vpc_name: 
+aws_route_table:
+aws_subnet_id:
+aws_region:
+aws_sec_group:
+aws_vpc_name:
+aws_vpc_cidr_block:
+aws_subnet_cidr:
+aws_subnet_name:
+aws_az_1:
+
+domain_name:
+
+tower_inst_type: 
+tower_ami_id:
+```
+
 * launch the playbook
 
 ```
