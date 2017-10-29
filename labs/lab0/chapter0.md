@@ -23,9 +23,9 @@ $ ssh -i ocp-lab.pem ec2-user@student-<number>.ocp-lab.sysdeseng.com
 
 **NOTE**: For Windows users you will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key. 
 
-Once installed, use the following instructions to SSH to the Tower instance link:http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html[http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html].
+For tips on using PuTTY to connect to your AWS instance, [click here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 
-TIP: Use the .PPK key located at:  [instructor host](http://s3-us-west-2.amazonaws.com/redhat-lunch-learn-lab/index.html)
+*TIP*: Remember to use the .PPK key located on the [instructor host.](http://s3-us-west-2.amazonaws.com/redhat-lunch-learn-lab/index.html)
 
 ## Getting Set Up
 For the sake of time, some of the required setup has already been taken care of on your AWS VM. For future reference though, the easiest way to get started is to head over to the OpenShift Origin repo on github and follow the "[cluster up and down instructions](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)" instructions. The instructions cover getting started on Windows, MacOS, and Linux.
