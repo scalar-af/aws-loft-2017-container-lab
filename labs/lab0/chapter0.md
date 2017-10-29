@@ -58,7 +58,7 @@ The resulting output should be something of this nature
 ```
 You should get a lot of feedback about the launch of OpenShift. As long as you don't get any errors you are in good shape.
 
-OK, so now that OpenShift is available, let's ask for a cluster status & take a look at our running containers:
+Now that OpenShift is available, let's ask for a cluster status & take a look at our running containers:
 ```bash
 $ oc cluster status
 $ docker ps
