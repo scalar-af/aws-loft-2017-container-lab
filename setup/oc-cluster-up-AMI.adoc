@@ -156,7 +156,7 @@ Now log into the console with the URL given as "oc cluster up" output.  Once you
 Clone the repository, this is done from your local workstation
 
 ```
-git clone -b RHTE-EMEA-PROD https://github.com/scollier/managing-ocp-install-beyond.git
+git clone -b AWS-OCP-LAB https://github.com/mann1mal/managing-ocp-install-beyond
 cd managing-ocp-install-beyond/
 cp my_secrets.yml <my-username>.yml
 ```
