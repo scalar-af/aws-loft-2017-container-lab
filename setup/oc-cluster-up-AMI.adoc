@@ -44,6 +44,11 @@ Primary Instance Type: t2.xlarge
 Limit name: Instance Limit
 New limit value: 100
 ```
+### Create keypair, Store .pem, and Create .ppk file
+
+The students in the labs will need to be able to access the instances via ssh protocol. This will require you to create a key pair to allow users to access the AWS instances. Create the keypair and store the resulting .pem file to distribute out to students during the lab.
+
+It can be assumed that a fair amount of the attendees will have Windows workstations as well. This will require you to offer those users a .PPK file to access their instances via PuTTy. Ensure you have a method to convert the .pem file form AWS into a .PPK file to offer to the attendees with Windows workstations.
 
 ## Prepare the AMI
 
