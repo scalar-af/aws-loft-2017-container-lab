@@ -102,7 +102,7 @@ ssh -i <KEY PAIR NAME HERE>.pem ec2-user@<aws-public-hostname>.amazonaws.com"
 # yum groupinstall -y "Development Tools""
 ```
 
-Configure Docker
+* Configure Docker
 
 ```
 sed -i '/OPTIONS=.*/c\OPTIONS="--selinux-enabled --insecure-registry 172.30.0.0/16"' /etc/sysconfig/docker
@@ -114,8 +114,7 @@ usermod -aG docker ec2-user
 reboot
 ```
 
-Configure Firewalld
-
+* Configure Firewalld
 
 ```
 systemctl restart firewalld
@@ -146,7 +145,7 @@ firewall-cmd --reload
 
 **Note:** Exit the root user, perform the rest of the commands as a regular user:
 
-Get the latest "oc" client.
+* Get the latest "oc" client.
 
 ```
 wget https://github.com/openshift/origin/releases/download/v3.6.0/openshift-origin-client-tools-v3.6.0-c4dd4cf-linux-64bit.tar.gz
@@ -155,13 +154,13 @@ sudo cp openshift-origin-client-tools-v3.6.0-c4dd4cf-linux-64bit/oc /usr/sbin/
 sudo rm -rf openshift-origin-client*
 ```
 
-Meet the requirements of "oc cluster up"
+* Meet the requirements of "oc cluster up"
  
 ```
 sudo sysctl -w net.ipv4.ip_forward=1
 ```
 
-Clone the lab repo: 
+* Clone the lab repo: 
 
 ```
 git clone https://github.com/mannimal/aws-loft-2017-container-lab.git
@@ -171,14 +170,14 @@ mv /home/ec2-user/aws-loft-2017-container-lab/scripts/host/start-oc.sh ~
 mv /home/ec2-user/aws-loft-2017-container-lab/scripts/host/cleanup-oc.sh ~
 ```
 
-Start the cluster to cache the iamges.
+* Start the cluster to cache the iamges.
 
 ```
 ./start-oc.sh
 sudo rm -rf /home/ec2-user/aws-loft-2017-container-lab
 ```
 
-Now log into the console with the URL given as "oc cluster up" output.  Once you can do that, you are ready to create an AWS AMI.
+* Test the deployment by attempting to access the OpenShift web UI via the public FQDN displayed in the "./start-oc.sh" output. If you can access the OCP web UI, you are ready to move on to the next step.
 
 ### Create AMI
 
