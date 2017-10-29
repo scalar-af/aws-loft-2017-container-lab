@@ -197,13 +197,13 @@ Now log into the console with the URL given as "oc cluster up" output.  Once you
 
 The following section details how to pull down and edit the Ansible playbooks to launch the lab for an event at scale.
 
-Clone the repository, this is done from your local workstation
+* Clone the repository to your local workstation. This repo contains the Ansible playbooks we will use to deploy the lab.
 
 ```
 git clone -b AWS-OCP-LAB https://github.com/mann1mal/managing-ocp-install-beyond
 cd managing-ocp-install-beyond/
 ```
-Make a copy of the "my_secrets" playbook. We will cusotmize this playbook to allow us to launch to lab for the students at scale.
+* Make a copy of the "my_secrets" playbook. We will cusotmize this playbook to allow us to launch to lab for the students at scale.
 
 ```
 cp my_secrets.yml <my-username>.yml
