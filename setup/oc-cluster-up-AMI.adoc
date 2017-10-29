@@ -73,20 +73,34 @@ In this section, we will build and customize the RHEL AMI that we will use as th
 
 ### Configure the AMI
 
-Do this as root:
+**Note:** Perform the following commands as the root user
 
-* Example: "ssh -i <KEY PAIR NAME HERE>.pem ec2-user@<aws-public-hostname>.amazonaws.com"
-* You will need to subscribe to Red Hat CDN, and then disable RHUI. You'll need to use an account that has the appropriate permissions.
+* ssh to the instance you just deployed
 
 ```
-subscription-manager register
-subscription-manager list --available --matches 'Red Hat OpenShift Enterprise Infrastructure'
-subscription-manager attach --pool 8a85f9XXXXXXXXXXXX
-subscription-manager repos --enable="rhel-7-server-rpms" --enable="rhel-7-server-extras-rpms" --enable="rhel-7-server-ose-3.6-rpms" --enable="rhel-7-fast-datapath-rpms"
+ssh -i <KEY PAIR NAME HERE>.pem ec2-user@<aws-public-hostname>.amazonaws.com"
 ```
 
-* Install a couple of packages: "yum -y install ansible python-devel git wget firewalld docker bash-completion"
-* Install the development tools: "yum groupinstall -y "Development Tools""
+* You will need to subscribe to Red Hat CDN. You'll need to use a Red Hat account that has the appropriate permissions/subscriptions available.
+
+```
+# subscription-manager register
+# subscription-manager list --available --matches 'Red Hat OpenShift Enterprise Infrastructure'
+# subscription-manager attach --pool 8a85f9XXXXXXXXXXXX
+# subscription-manager repos --enable="rhel-7-server-rpms" --enable="rhel-7-server-extras-rpms" --enable="rhel-7-server-ose-3.6-rpms" --enable="rhel-7-fast-datapath-rpms"
+```
+
+* Install auxiliary packages used in the lab:
+
+```
+# yum -y install ansible python-devel git wget firewalld docker bash-completion"
+```
+
+* Install the development tools: 
+
+```
+# yum groupinstall -y "Development Tools""
+```
 
 Configure Docker
 
@@ -130,7 +144,7 @@ firewall-cmd --reload
 ```
 
 
-Do these as regular user:
+**Note:** Exit the root user, perform the rest of the commands as a regular user:
 
 Get the latest "oc" client.
 
