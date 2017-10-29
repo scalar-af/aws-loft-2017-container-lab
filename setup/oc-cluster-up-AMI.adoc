@@ -11,11 +11,28 @@ This guide is here to show instructors how to set up and run the lab.  It covers
 
 ## Pre-Reqs
 
-* VPC is created
-* Key pair has been created
-** Provide the aws access and secret key
-** Provide the correct region
-* Running web server to host the ssh key
+Create and configure the VPC for the lab
+
+* Create VPC, CIDR block
+** Right-click on VPC, “Edit DNS Resolution,” ensure it is enabled
+** Right-click on VPC, “Edit DNS Hostnames,” ensure it is enabled
+* Create subnet, assign subnet to VPC, CIDR block
+** Right-click on newly created subnet and ensure you have “Auto-assign IP addresses” in enabled
+* Create and attach an internet gatway to your VPC
+* Associate route table with Subnet. 
+** Create a new route (Destination: 0.0.0.0/0 Target: <internet gateway-id>)
+* Create security group, assign to VPC
+** Outbound rules: All Traffic
+** Inbound rules (source should be 0.0.0.0/0 for all rules):
+*** HTTP Port 80
+*** HTTP* Port 8080
+*** SSH Port 22
+*** HTTPS Port 443
+*** HTTPS* Port 8443
+*** All ICMP - IPv4 Port ALL
+
+
+
 
 ## Prepare the AMI
 
