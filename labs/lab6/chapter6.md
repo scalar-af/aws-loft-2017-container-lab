@@ -4,7 +4,7 @@ In this lab, we are going to build upon the previous labs and leverage what we h
 
 Expected completion: 10-20 minutes
 
-**Note: This lab includes instructions that will blow away the work done in prevoius labs so do not attempt this lab until you are finished with labs 1-5**
+**Note:** This lab includes instructions that will blow away the work done in prevoius labs so do not attempt this lab until you are finished with labs 1-5
 
 ## Setup Environment
 If you don't already have a docker hub account, you'll need one for this lab. Sign up here: 
