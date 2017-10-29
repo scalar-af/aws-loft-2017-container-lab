@@ -47,6 +47,8 @@ New limit value: 100
 
 ## Prepare the AMI
 
+In this section, we will build and customize the RHEL AMI that we will use as the underlying RHEL image for the lab deployment
+
 ### Launch AMI
 
 * Log into AWS
