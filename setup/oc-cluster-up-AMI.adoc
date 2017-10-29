@@ -171,8 +171,9 @@ ansible-playbook -v -e @<my-username>.yml aws_lab_launch.yml
 * log into the AWS vm and start the lab
 
 ```
-ssh -i /path/to/rhte.pem ec2-user@tower-<my-username>-devops-test-1.rhte.sysdeseng.com
+ssh -i /path/to/.pem ec2-user@student-<**x**>.ocp-lab.sysdeseng.com
 ```
+**Note:** FQDN will be dependent on the domain you provide in the Ansible playbook
 
 Each VM is assigned a public DNS name.  Log in with your student ID substituted in the the DNS name above
 
