@@ -2,16 +2,17 @@
 
 This guide is here to show instructors how to set up and run the lab.  It covers a few tasks:
 
-* Local environment pre-reqs
 * AWS pre-reqs
 * AMI preparation
 * Docker configuration
 * Lab launch instructions
 * Web server configuration
 
-## Pre-Reqs
+## AWS Pre-Reqs
 
-Create and configure the VPC for the lab
+### Create and configure the VPC for the lab
+
+We need to create a VPC for our lab to ensure the attendees can access the enviornment from their workstations
 
 * Create VPC, CIDR block
 ** Right-click on VPC, “Edit DNS Resolution,” ensure it is enabled
@@ -31,8 +32,18 @@ Create and configure the VPC for the lab
 *** HTTPS* Port 8443
 *** All ICMP - IPv4 Port ALL
 
+### Request AMI Quota increase with AWS Support team
 
+Please note, that there is a default quota set on each availability zone for each AMI size. If you plan on deploying more than 15 images for this lab, please request a quota increase with the AWS support team for your specific region and AMI type. See example ticket request below:
 
+```
+Limit increase request 1
+Service: EC2 Instances
+Region: US West (Oregon)
+Primary Instance Type: t2.xlarge
+Limit name: Instance Limit
+New limit value: 100
+```
 
 ## Prepare the AMI
 
@@ -42,7 +53,7 @@ Create and configure the VPC for the lab
 * Choose EC2
 * Click "Launch Instance"
 * Select "Red Hat"
-* Select "t2.large", click "Next"
+* Select "t2.xlarge", click "Next"
  - Select "Network"
  - Select "Subnet"
  - Ensure "Auto-assign Public IP" is "enabled"
@@ -62,7 +73,7 @@ Create and configure the VPC for the lab
 
 Do this as root:
 
-* Example: "ssh -i <KEY PAIR NAME HERE>.pem ec2-user@ec2-54-204-171-139.compute-1.amazonaws.com"
+* Example: "ssh -i <KEY PAIR NAME HERE>.pem ec2-user@<aws-public-hostname>.amazonaws.com"
 * You will need to subscribe to Red Hat CDN, and then disable RHUI. You'll need to use an account that has the appropriate permissions.
 
 ```
@@ -137,7 +148,7 @@ sudo sysctl -w net.ipv4.ip_forward=1
 Clone the lab repo: 
 
 ```
-git clone https://github.com/tchughesiv/aws-loft-2017-container-lab.git
+git clone https://github.com/mannimal/aws-loft-2017-container-lab.git
 chmod +x /home/ec2-user/aws-loft-2017-container-lab/scripts/host/start-oc.sh
 chmod +x /home/ec2-user/aws-loft-2017-container-lab/scripts/host/cleanup-oc.sh
 mv /home/ec2-user/aws-loft-2017-container-lab/scripts/host/start-oc.sh ~
