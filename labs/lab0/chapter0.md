@@ -71,7 +71,7 @@ We can also check out the OpenShift console. Open a browser and navigate to `htt
 Clone the lab repository from github:
 ```bash
 $ cd ~/
-$ git clone https://github.com/mann1mal/aws-loft-2017-container-lab
+$ git clone https://github.com/tchughesiv/aws-loft-2017-container-lab
 ```
 
 ## OpenShift Container Platform
