@@ -1,3 +1,6 @@
+
+# **NOTE:** Instructions are due for an update with an ansible playbook to deploy the VPC, please reach out to jmann@redhat.com before you start to manually build this out
+
 # Introduction
 
 This guide is here to show instructors how to set up and run the lab.  It covers a few tasks:
