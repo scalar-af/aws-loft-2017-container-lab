@@ -7,7 +7,7 @@ Expected completion: 5-10 minutes
 ## Find your AWS Instance
 This lab is designed for to accomodate many students. Each student will be given a VM running on AWS. The naming convention for the lab is:
 
-**student-\<number\>**.sclr.cloud
+**student-##**.sclr.cloud
 
 You will be assigned a number by the instructor.
 
