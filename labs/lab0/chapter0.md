@@ -5,7 +5,7 @@ In this lab, we are going to leverage a process known as [`oc cluster up`](https
 Expected completion: 5-10 minutes
 
 ## Find your AWS Instance
-This lab is designed for to accomodate many students. Each student will be given a VM running on AWS. The naming convention for the lab is:
+This lab is designed to accomodate many students. Each student will be given a VM running on AWS. The VM naming convention for the lab is:
 
 **student-##**.sclr.cloud
 
@@ -16,7 +16,7 @@ This lab should be performed on **YOUR ASSIGNED AWS INSTANCE** as `ec2-user` unl
 
 Retrieve the key from the [here](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html) so that you can _SSH_ into the instances. Linux or Mac users, download the .PEM to your local machine & change the permissions of the .PEM file to 600. Windows users, download the .PPK key, no permission changes required.
 
-**_NOTE_**: Please be respectful and only connect to your assigned instance. Every instance for this lab uses the same public key so you could accidentally (or with malicious intent) connect to the wrong system. If you have any issues please inform an instructor.
+**NOTE**: Please be respectful and only connect to your assigned instance. Every instance for this lab uses the same public key so you could accidentally (or with malicious intent) connect to the wrong system. If you have any issues please inform an instructor.
 ```bash
 $ ssh -i af-ocp-lab.pem ec2-user@student-##.sclr.cloud
 ```
