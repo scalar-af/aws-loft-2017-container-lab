@@ -1,13 +1,13 @@
 ## Introduction
 
-In this lab, we are going to leverage a process known as [`oc cluster up`](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md). This enables us to quickly stand up a local OpenShift Container Platform to start our evaluation. The key result of `oc cluster up` is a reliable, reproducible OpenShift environment to iterate on..
+In this lab, we are going to leverage a process known as [`oc cluster up`](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md). This enables us to quickly stand up a local OpenShift Container Platform to start our evaluation. The key result of `oc cluster up` is a reliable, reproducible OpenShift environment to iterate on.
 
 Expected completion: 5-10 minutes
 
 ## Find your AWS Instance
 This lab is designed for to accomodate many students. Each student will be given a VM running on AWS. The naming convention for the lab is:
 
-**student-\<number\>**.ocp-lab.sysdeseng.com
+**student-\<number\>**.sclr.cloud
 
 You will be assigned a number by the instructor.
 
@@ -18,14 +18,14 @@ This lab should be performed on **YOUR ASSIGNED AWS INSTANCE** as `ec2-user` unl
 
 **_NOTE_**: Please be respectful and only connect to your assigned instance. Every instance for this lab uses the same public key so you could accidentally (or with malicious intent) connect to the wrong system. If you have any issues please inform an instructor.
 ```bash
-$ ssh -i ocp-lab.pem ec2-user@student-<number>.ocp-lab.sysdeseng.com
+$ ssh -i ocp-lab.pem ec2-user@student-<number>.sclr.cloud
 ```
 
 **NOTE**: For Windows users you will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key. 
 
 For tips on using PuTTY to connect to your AWS instance, [click here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 
-*TIP*: Remember to use the .PPK key located on the [instructor host.](http://s3-us-west-2.amazonaws.com/redhat-lunch-learn-lab/index.html)
+*TIP*: Remember to use the .PPK key located on the [instructor host.](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html)
 
 ## Getting Set Up
 For the sake of time, some of the required setup has already been taken care of on your AWS VM. For future reference though, the easiest way to get started is to head over to the OpenShift Origin repo on github and follow the "[cluster up and down instructions](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)" instructions. The instructions cover getting started on Windows, MacOS, and Linux.
