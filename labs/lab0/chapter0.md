@@ -20,7 +20,7 @@ Retrieve the key from the [here](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/
 ```bash
 $ ssh -i af-ocp-lab.pem ec2-user@student-##.sclr.cloud
 ```
-**NOTE**: Windows users will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key (.PPK). 
+**NOTE**: Windows users will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key ([.PPK])(https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html).
 ```
 c:\path\to\putty.exe -i af-ocp-lab.ppk ec2-user@student-##.sclr.cloud
 ```
