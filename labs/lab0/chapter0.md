@@ -11,18 +11,19 @@ This lab is designed for to accomodate many students. Each student will be given
 
 You will be assigned a number by the instructor.
 
-Retrieve the key from the [instructor host](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html) so that you can _SSH_ into the instances by accessing the password protected directory from the table above. Download the .PEM or .PPK file to your local machine and change the permissions of the file to 600.
+Retrieve the key from the [instructor host](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html) so that you can _SSH_ into the instances. Download the .PEM or .PPK file to your local machine - change the permissions of the .PEM file to 600.
 
 ## Connecting to your AWS Instance
 This lab should be performed on **YOUR ASSIGNED AWS INSTANCE** as `ec2-user` unless otherwise instructed.
 
 **_NOTE_**: Please be respectful and only connect to your assigned instance. Every instance for this lab uses the same public key so you could accidentally (or with malicious intent) connect to the wrong system. If you have any issues please inform an instructor.
 ```bash
-$ ssh -i af-ocp-lab.pem ec2-user@student-<number>.sclr.cloud
+$ ssh -i af-ocp-lab.pem ec2-user@student-##.sclr.cloud
 ```
-
 **NOTE**: For Windows users you will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key. 
-
+```
+c:\path\to\putty.exe -i af-ocp-lab.ppk ec2-user@student-##.sclr.cloud
+```
 For tips on using PuTTY to connect to your AWS instance, [click here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
 
 *TIP*: Remember to use the .PPK key located on the [instructor host.](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html)
