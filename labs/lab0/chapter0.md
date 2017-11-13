@@ -14,19 +14,17 @@ You will be assigned a number by the instructor.
 ## Connecting to your AWS Instance
 This lab should be performed on **YOUR ASSIGNED AWS INSTANCE** as `ec2-user` unless otherwise instructed.
 
-Retrieve the key from the [here](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html) so that you can _SSH_ into the instances. Linux or Mac users, download the .PEM to your local machine & change the permissions of the .PEM file to 600.
+Retrieve the key from the [here](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html) so that you can _SSH_ into the instances. Linux or Mac users, download the .PEM to your local machine & change the permissions of the .PEM file to 600. Windows users, download the .PPK key, no permission changes required.
 
 **_NOTE_**: Please be respectful and only connect to your assigned instance. Every instance for this lab uses the same public key so you could accidentally (or with malicious intent) connect to the wrong system. If you have any issues please inform an instructor.
 ```bash
 $ ssh -i af-ocp-lab.pem ec2-user@student-##.sclr.cloud
 ```
-**NOTE**: Windows users will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key ([.PPK])(https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html).
+**NOTE**: Windows users will have to use a terminal like [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) to SSH using the private key (.PPK).
 ```
 c:\path\to\putty.exe -i af-ocp-lab.ppk ec2-user@student-##.sclr.cloud
 ```
 For tips on using PuTTY to connect to your AWS instance, [click here.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html)
-
-*TIP*: Remember to use the .PPK key located on the [instructor host.](https://s3-us-west-2.amazonaws.com/aws-ocp-lab/index.html)
 
 ## Getting Set Up
 For the sake of time, some of the required setup has already been taken care of on your AWS VM. For future reference though, the easiest way to get started is to head over to the OpenShift Origin repo on github and follow the "[cluster up and down instructions](https://github.com/openshift/origin/blob/master/docs/cluster_up_down.md)" instructions. The instructions cover getting started on Windows, MacOS, and Linux.
@@ -74,7 +72,7 @@ Clone the lab repository from github:
 $ cd ~/
 $ git clone https://github.com/tchughesiv/aws-loft-2017-container-lab
 ```
-
+If the folder is already cloned and part of your VM, please ingore any errors and proceed.
 ## OpenShift Container Platform
 
 What is OpenShift? OpenShift, which you may remember as a "PaaS" to build applications on, has evolved into a complete container platform based on Kubernetes. If you remember the "DIY Cartridges" from older versions of Openshift, essentially, OpenShift v3 has expanded the functionality to provide complete containers. With OpenShift, you can build from a platform, build from scratch, whatever you can do in a container, and still get the complete lifecycle automation you loved in the older versions.
