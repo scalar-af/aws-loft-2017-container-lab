@@ -64,18 +64,7 @@ $ docker ps
 $ docker images
 ```
 We can also check out the OpenShift console. Open a browser and navigate to `https://<public-hostname>:8443`. Once it loads (and you bypass the certificate error), you can log in to the console using the default developer username/password.
-
-## Lab Materials
-
-Clone the lab repository from github:
-```bash
-$ cd ~/
-$ git clone https://github.com/tchughesiv/aws-loft-2017-container-lab
-```
-If the folder is already cloned and part of your VM, please ingore any errors and proceed.
-## OpenShift Container Platform
-
-What is OpenShift? OpenShift, which you may remember as a "PaaS" to build applications on, has evolved into a complete container platform based on Kubernetes. If you remember the "DIY Cartridges" from older versions of Openshift, essentially, OpenShift v3 has expanded the functionality to provide complete containers. With OpenShift, you can build from a platform, build from scratch, whatever you can do in a container, and still get the complete lifecycle automation you loved in the older versions.
+ild from scratch, whatever you can do in a container, and still get the complete lifecycle automation you loved in the older versions.
 
 **Please note:** Labs 1 and 3 will contain objectives that need to be completed in order to perform Lab 5. Labs 2 and 4 are notated as "Optional" because they do NOT need to be completed in order to perform Lab 5. If time permits, feel free to run through Labs 2 and 4.
 
